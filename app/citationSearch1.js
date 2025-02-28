@@ -484,9 +484,6 @@ const CitationSearch1 = ({ navigation }) => {
                 handleSecondDropdownChange(item.label)
               }
             }}
-            // renderLeftIcon={() => (
-            //   <AntDesign style={styles.icon} color="black" name="calendar" size={20} />
-            // )}
             renderItem={renderItem}
             onFocus={() => {
               const canOpen = handleYearDropdownClick();  
@@ -515,9 +512,6 @@ const CitationSearch1 = ({ navigation }) => {
               setSelectedSegment(item.label);
               handleThirdDropdownChange(item.label)
             }}
-            // renderLeftIcon={() => (
-            //   <AntDesign style={styles.icon} color="black" name="Safety" size={20} />
-            // )}
             renderItem={renderItem} />
           <Dropdown
             style={styles.dropdown3}
@@ -539,9 +533,6 @@ const CitationSearch1 = ({ navigation }) => {
               handleFourthDropdownChange(item.label)
 
             }}
-            // renderLeftIcon={() => (
-            //   <AntDesign style={styles.icon} color="black" name="Safety" size={20} />
-            // )}
             renderItem={renderItem} />
           
           <Dropdown
@@ -562,9 +553,6 @@ const CitationSearch1 = ({ navigation }) => {
             onChange={item => {
               setSelectedPage(item.label);
             }}
-            // renderLeftIcon={() => (
-            //   <AntDesign style={styles.icon} color="black" name="Safety" size={20} />
-            // )}
             renderItem={renderItem} />
 
         </View>
@@ -676,8 +664,9 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   dropdown2: {
-    top: -155,
+    top: -100,
     marginRight: 73,
+    right: 120,
     marginLeft: 250,
     height: 30,
     backgroundColor: 'white',
@@ -716,10 +705,12 @@ const styles = StyleSheet.create({
   },
   dropdown4: {
     // margin: 15,
-    top: -10,
-    marginRight: 171,
+    top: -65,
+    marginRight: 170,
     marginLeft: 130,
+    right: -115,
     height: 30,
+    width: 100,
     backgroundColor: 'white',
     padding: 12,
     shadowColor: '#000',
@@ -792,4 +783,6 @@ const styles = StyleSheet.create({
     width: '100%',
   }
 });
+
+
 

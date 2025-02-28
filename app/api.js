@@ -1,14 +1,14 @@
 import axios, { Axios } from 'axios';
-// const API_URL = "http://192.168.0.102:8085/aironline";
+const API_URL = "http://192.168.0.102:8082/aironline";
 // const API_URL = "http://192.168.0.99:8080/aironline"; //testserver
 // const API_URL = "http://128.127.49.63:8085/aironline"; //Conference
 // const API_URL = "http://192.168.1.6:8085/aironline"; //Arbitration
 
-const API_URL = "https://aisnagpur.com/aironline";
+// const API_URL = "https://aisnagpur.com/aironline";
 
 // const API_URL = "http://192.168.137.62:8085/aironline"; // arbitratiion
 
-const token = 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImlzMmZhRW5hYmxlZCI6ZmFsc2UsImlhdCI6MTc0MDcyNjExNSwiZXhwIjoxNzQwNzM2MTE1fQ.PvbnFHYhF_TQA4wkmQxwaNfsmcv356OnngvxAMLw9b4vpdzINGk48VprIByiRjYfSbLU_r2o1yjTEVZTN3hGOg';
+const token = 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImlzMmZhRW5hYmxlZCI6ZmFsc2UsImlhdCI6MTc0MDczMjgzMiwiZXhwIjoxNzQwNzQyODMyfQ.8Piyq06XNuS8rhlugRPHWaxMMP2_aO87_Pi_sFL1K47aGdKBzlHP5yyh82MthqQLD-IZxPRwx_wfcFBZpWHlzw';
 export const getJournal = async () => {
   try {
     console.log('Authorization Header:', `Bearer ${token}`);
